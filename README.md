@@ -1,3 +1,36 @@
+# Eskalate AI Software Engineer JS/TS Assignment
+
+## Overview
+This repository demonstrates debugging, testing, and minimal bug fixing in a TypeScript project. It includes a small module with a realistic bug, a Jest test suite, and a minimal fix. The environment is reproducible via Docker.
+
+## Folder Structure
+- `src/` — Application source code
+- `tests/` — Test suite
+- `Dockerfile` — CI-style test runner
+- `README.md` — Project documentation
+- `Explanation.md` — Bug and fix explanation
+- `package.json` — Pinned dependencies
+- `.gitignore` — Excludes lockfiles, node_modules, dist
+
+## Running Tests Locally
+
+```bash
+npm install
+npm test
+```
+
+## Running Tests with Docker
+
+```bash
+docker build -t eskalate-assignment .
+docker run --rm eskalate-assignment
+```
+
+## Notes
+- All dependencies are pinned to exact versions.
+- The bug is minimal and realistic, with tests that reproduce it.
+- The fix is the smallest possible change.
+- No lockfiles are included.
 # AI Experts Assignment (JS/TS)
 
 This assignment evaluates your ability to:
