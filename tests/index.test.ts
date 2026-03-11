@@ -15,4 +15,9 @@ describe('getNthElement', () => {
     // This test will fail with the bug
     expect(getNthElement(arr, 1)).toBe('a');
   });
+
+  it('returns undefined for zero and negative n', () => {
+    expect(getNthElement(arr, 0)).toBeUndefined();
+    expect(getNthElement(arr, -1)).toBeUndefined();
+  });
 });

@@ -3,6 +3,7 @@
  * Returns undefined if n is out of bounds.
  */
 export function getNthElement<T>(array: T[], n: number): T | undefined {
-  // FIX: Correct off-by-one error
+  // Guard against zero or negative n
+  if (n <= 0) return undefined;
   return array[n - 1];
 }
